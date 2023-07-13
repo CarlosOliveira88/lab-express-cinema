@@ -1,0 +1,31 @@
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img id="imageMovie" src={{image}} class="img-fluid rounded-start" alt={{title}}>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <a href="/movies">Go back</a>
+                <h5 class="card-title"><strong>{{title}}</strong></h5>
+                <p class="card-text"><strong>Director: {{director}}</strong></p>
+                <p class="card-text">Stars</p>
+                <ul>
+                    {{#each stars}}
+                    <li class="stars-li">{{this}}
+                    </li>
+                    {{/each}}
+                </ul>
+                <p class="card-text">{{description}}</p>
+                <p class="card-text ">
+                <ul class="showtimes">
+                    {{#each showtimes}}
+                    <li>{{this}} | </li>
+                    {{/each}}
+                </ul>
+                </p>
+
+                <p class="card-text"><small class="text-body-secondary">ya disponible en IronHack.com</small></p>
+            </div>
+        </div>
+    </div>
+</div>

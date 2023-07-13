@@ -1,8 +1,157 @@
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom, #b14b5a, #29277d);
+
 }
 
-a {
+
+.moviesTitulo {
+  color: #ffffff;
+  margin: 5px;
+  margin-left: 40px;
+  padding: 2px;
+}
+
+.btn-add {
+  float: left !important;
+  margin: 5px !important;
+  margin-left: 40px !important;
+  padding: 6px !important;
+}
+
+ul a {
   color: #00B7FF;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.movie-list {
+  margin: 10px;
+}
+
+.movie-list h2 {
+  font-size: 20px;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+ul li {
+  list-style: none;
+  width: 30%;
+  flex-wrap: wrap;
+}
+
+ul h6 {
+  margin: 5px;
+}
+
+.showtimes li {
+  display: inline !important;
+  color: black;
+  width: auto;
+  ;
+}
+
+
+
+#imageMovie {
+  height: 100%;
+  object-fit: initial;
+}
+
+.body {
+  background-image: url("/images/cinema.jpg");
+  background-size: cover;
+  /* background-size: 80%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 700px;
+  min-width: 100%;
+
+}
+
+.container {
+  margin: 10px;
+
+}
+
+.container button {
+  margin: 10px;
+}
+
+
+#cine {
+  font-size: 600%;
+  color: #ffffff;
+  margin-top: 1px;
+  margin-left: 50%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #738cf0;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 200px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 50%;
+}
+
+#add {
+  background: linear-gradient(135deg, #deb728, #e80606);
+  animation: gradientAnimation 8s ease infinite alternate;
+  max-width: 40%;
+  padding: 30px;
+  margin-left: 30%;
+  max-height: max-content;
+  overflow: auto;
+  border-radius: 50px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+#add h3 {
+  display: flex;
+  margin: 5px;
+  margin-left: 20%;
+
+}
+
+.imput {
+  margin: 0px;
+  align-items: center;
+  display: block;
+  width: 100%;
+}
+
+.stars-li {
+  color: black;
+  display: list-item;
+  list-style-type: disc;
+  width: -webkit-fill-available;
+  white-space: nowrap;
 }

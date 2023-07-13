@@ -1,0 +1,16 @@
+<!-- views/movies.hbs -->
+<div id="moviesTitulo">
+    <h1 class="moviesTitulo">IronHack Cinema</h1>
+    <p class="moviesTitulo">Click on the movie to check the showtimes!</p>
+    <a href="/add" class="button btn-add "> movies create</a>
+</div>
+<ul>
+    {{#each movies}}
+    <li class="movie-list">
+
+        <img src="{{this.image}}" alt="{{this.title}} poster" />
+        <h6>{{this.title}}</h6>
+        <a href="/movies/{{this._id}}">View more</a>
+    </li>
+    {{/each}}
+</ul>
